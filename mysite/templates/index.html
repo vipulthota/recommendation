@@ -1,0 +1,154 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile-based Laptop Recommendation</title>
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</head>
+<body>
+    <h1>Profile-based Laptop Recommendation</h1>
+
+    <div class="container">
+        <form id="mcqForm">
+            <fieldset class="paddy">
+                <fieldset class="pad">
+                    <h3>What is your profession?</h3>
+                    <label>
+                        <input type="radio" name="q1" value=0> Gamer
+                    </label>
+                    <br>
+                    <label>
+                        <input type="radio" name="q1" value=1> Student
+                    </label>
+                    <br>
+                    <label>
+                        <input type="radio" name="q1" value=2> Business
+                    </label>
+                </fieldset>
+                
+                <fieldset class="pad" id="heavy-options" style="display: none;">
+                    <h4>Select an usage type:</h4>
+                    <label>
+                        <input type="radio" name="os_" value=1> Heavy
+                    </label>
+                    <br>
+                    <label>
+                        <input type="radio" name="os_" value=0> Casual
+                    </label>
+                </fieldset>
+
+                <fieldset class="pad" id="processor-options" style="display: none;">
+                    <h4>Select a Processor:</h4>
+                    <label>
+                        <input type="radio" name="processor" value=2> AMD
+                    </label>
+                    <br>
+                    <label>
+                        <input type="radio" name="processor" value=1> Intel
+                    </label>
+                </fieldset>
+
+                <fieldset class="pad" id="gpu-options" style="display: none;">
+                    <h4>Select a GPU:</h4>
+                    <label>
+                        <input type="radio" name="gpu" value=0> NVIDIA
+                    </label>
+                    <br>
+                    <label>
+                        <input type="radio" name="gpu" value=1> AMD
+                    </label>
+                </fieldset>
+
+                <fieldset class="pad" id="display-options" style="display: none;">
+                    <h4>Select a Display Resolution:</h4>
+                    <label>
+                        <input type="radio" name="display" value=720> 720p
+                    </label>
+                    <br>
+                    <label>
+                        <input type="radio" name="display" value=1080> 1080p
+                    </label>
+                    <br>
+                    <label>
+                        <input type="radio" name="display" value=1440> 1440p
+                    </label>
+                    <br>
+                    <label>
+                        <input type="radio" name="display" value=2160> 2160p
+                    </label>
+                </fieldset>
+
+                <fieldset class="pad" id="os-options" style="display: none;">
+                    <h4>Select an OS:</h4>
+                    <label>
+                        <input type="radio" name="os" value=4> macOS
+                    </label>
+                    <br>
+                    <label>
+                        <input type="radio" name="os" value=1> Windows
+                    </label>
+                </fieldset>
+
+                <fieldset class="pad" id="touch-options" style="display: none;">
+                    <h4>Touch Screen:</h4>
+                    <label>
+                        <input type="radio" name="touch" value=1> Yes
+                    </label>
+                    <br>
+                    <label>
+                        <input type="radio" name="touch" value=0> No
+                    </label>
+                </fieldset>
+
+                <fieldset class="pad" id="expandable-memory" style="display: none;">
+                    <h4>Expandable-memory:</h4>
+                    <label>
+                        <input type="radio" name="expandable-memory" value=1> Yes
+                    </label>
+                    <br>
+                    <label>
+                        <input type="radio" name="expandable-memory" value=0> No
+                    </label>
+                </fieldset>
+
+                <fieldset class="pad" id="price" style="display: none;">
+                    <legend><h4>Price</h4></legend>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="price" id="price1" value=0>
+                        <label class="form-check-label" for="price1">less than ₹50,000</label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="price" id="price2" value=1>
+                        <label class="form-check-label" for="price2">₹50,000-₹1,00,000</label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="price" id="price3" value=2>
+                        <label class="form-check-label" for="price3">₹1,00,000-₹1,50,000</label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="price" id="price4" value=3>
+                        <label class="form-check-label" for="price4">₹1,50,000-₹2,00,000</label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="price" id="price5" value=4>
+                        <label class="form-check-label" for="price5">₹2,00,000+</label>
+                    </div>
+                </fieldset>
+                
+                <!-- <button onclick="redirectToGoogle()">Submit</button> -->
+                <button id="sub" type="submit" class="btn btn-primary">Submit</button>
+            </fieldset>
+        </form>
+    </div>
+
+
+    <script src="{% static 'js/script.js' %}"></script>
+</body>
+</html>

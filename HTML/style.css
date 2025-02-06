@@ -1,0 +1,68 @@
+/* h1{
+    text-align: center;
+} */
+
+/* form{
+    display: block;
+    width: max-content;
+    margin: auto;
+} */
+
+/* h4{
+    font-size:medium;
+} */
+
+/* .pad{
+    width: 400px;
+    padding-left: 75px;
+    margin: 10px;
+} */
+
+/* #sub{
+    margin-left: 70px;
+} 
+
+.paddy{
+    background-color: rgba(0, 255, 255, 0.544);
+    color:black;
+}
+*/
+h1{
+    box-sizing: border-box;
+    
+}
+form{
+    box-sizing: border-box;
+    background-color: aqua;
+}
+body {
+    background-color: #000; /* Set background color to black */
+    color: #fff; /* Set text color to white */
+    font-family: Arial, sans-serif;
+}
+
+h1 {
+    text-align: center;
+    color: #030303;
+    margin-top: 20px;
+}
+
+.paddy {
+    padding: 20px;
+    background-color: #ffffff00;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.form-check-label {
+    font-weight: normal;
+}
+
+/* Style the submit button */
+#sub {
+    margin-top: 20px;
+}
+button{
+    text-align: center;
+    /* color: #030303; */
+}
